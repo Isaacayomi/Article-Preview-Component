@@ -43,5 +43,5 @@ Users should be able to:
 ## Author
 
 - Website - [Isaac Ayomi](https://github.com/Isaacayomi)
-- Frontend Mentor - [@Ademide](https://www.frontendmentor.io/profile/Ademide07)
-- Twitter - [@Seeker](https://www.twitter.com/seekerr_07)
+- Frontend Mentor - [Ademide](https://www.frontendmentor.io/profile/Ademide07)
+- Twitter - [Seeker](https://www.twitter.com/seekerr_07)
