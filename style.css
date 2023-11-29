@@ -7,6 +7,7 @@
   text-decoration: none;
   font-family: var(--font);
   font-size: 13px;
+  transition: 0.4s all ease-in-out;
 }
 
 :root {
@@ -106,7 +107,7 @@ body {
 
 .attribution p,
 .attribution a {
-  margin-top: 0.7rem;
+  margin-top: -1.3rem;
   font-size: 0.9rem;
   text-align: center;
 }
@@ -150,6 +151,11 @@ body {
 .share-icon img:hover {
   cursor: pointer;
 }
+
+/* Removes the desktop share icon on the mmobile view */
+.desktop-share-icon {
+  display: none;
+}
 /* Active state ends */
 
 /* Hides hidden state */
@@ -173,6 +179,7 @@ body {
   .text-section {
     border-radius: 0 1rem 1rem 0;
     box-shadow: none;
+    position: relative;
   }
 
   .text-section .heading {
@@ -191,7 +198,42 @@ body {
     gap: 1.8rem;
   }
 
+  /* Adds a new share-icon on dekstop view */
+  .desktop-share-icon {
+    display: block;
+    padding-block: 0.2rem;
+  }
+
+  /* Removes the mobile share-icon on the desktop view  */
+  .inactive-share-icon {
+    display: none;
+  }
+
   .avatar-name {
     margin-right: 11rem;
+  }
+
+  /* Desktop modal container */
+  .hide-modal {
+    display: flex;
+    gap: 2rem;
+    position: absolute;
+    top: 50%;
+    right: -10%;
+    width: 230px;
+    padding-inline: 2rem;
+    padding-block: 1.3rem;
+    border-radius: 1rem;
+    box-shadow: 0px 3px 8px 3px rgba(0, 0, 0, 0.136);
+  }
+
+  /* Hides desktop modal */
+  .displayNone {
+    display: none;
+  }
+
+  .share-icon {
+    display: none;
+    background-color: none;
   }
 }
